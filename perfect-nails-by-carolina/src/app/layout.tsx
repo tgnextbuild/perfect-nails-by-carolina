@@ -5,6 +5,7 @@ import "./globals.css"
 import Navigation from "@/components/Navigation"
 import Footer from "@/components/Footer"
 import FloatingActionButton from "@/components/FloatingActionButton"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
 const greatVibes = Great_Vibes({
@@ -33,8 +34,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         <main className="min-h-screen">{children}</main>
+        <Analytics />
         <Footer />
         <FloatingActionButton />
+
       </body>
     </html>
   )
