@@ -51,7 +51,7 @@ export default function AboutPage() {
                     <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-600">Trusted by 500+ happy clients</p>
+                <p className="text-gray-600">Trusted by 100+ happy clients</p>
               </div>
             </div>
 
