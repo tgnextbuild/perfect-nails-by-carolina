@@ -6,44 +6,43 @@ import { Badge } from "@/components/ui/badge"
 
 export default function HomePage() {
   const featuredServices = [
-    { name: "Gel Color Set - Fill", description: "Refresh your existing gel manicure with new color" },
-    { name: "Gel Color Set - Full", description: "Complete gel manicure with long-lasting color" },
+    { name: "Acrylic Fullset", description: "Complete acrylic set" },
+    { name: "Gel Color Set", description: "Complete gel manicure with long-lasting color" },
     { name: "Express Manicure", description: "Quick and professional nail care for busy schedules" },
     { name: "Express Pedicure", description: "Fast, refreshing pedicure treatment" },
   ]
 
   const manicureServices = [
-    { name: "Express Manicure", description: "Quick nail shaping, cuticle care, and polish" },
-    { name: "Children Manicure", description: "Gentle nail care designed especially for kids" },
-    { name: "Traditional", description: "Traditional nail polish" },
-    { name: "Gel Color Set", description: "Complete or refresh gel manicure with long-lasting color" },
-    { name: "Gel Polish", description: "Long-lasting gel topcoat for extended wear" },
-    { name: "Gel Removal", description: "Safe and gentle removal of existing gel polish" },
+    { name: "Regular Manicure", description: "A classic manicure with nail shaping, cuticle care, and polish application." },  
+    { name: "Color Gel Manicure", description: "Long-lasting gel polish cured under UV light for a chip-resistant shine." },  
+    { name: "Color Acrylic + Gel Polish", description: "Acrylic nails with a durable gel polish finish for extended wear." },  
+    { name: "Color Acrylic", description: "Custom acrylic nails with your choice of color for strength and style." },  
+    { name: "Apres Nail Ext.", description: "Apres nail extensions for a lightweight, natural-looking nail enhancement." },  
+    { name: "UV Gel on Natural nail", description: "A gel overlay on natural nails for added strength and glossy shine." },  
+    { name: "UV Gel Ext.", description: "Gel extensions for a durable, flexible, and natural-looking manicure." },  
+    { name: "Sculpted Nails", description: "Handcrafted acrylic or gel nails shaped to your desired length and style." },  
   ]
 
   const pedicureServices = [
-    { name: "Express Pedicure", description: "Quick foot care with nail shaping and polish" },
-    // { name: "Callus Treatment", description: "Professional callus removal for smooth feet" },
-    { name: "Traditional", description: "Traditional nail polish" },
-    { name: "Gel Polish", description: "Durable gel polish for long-lasting pedicures" },
-  ]
-
-
-  const artificialNailCare = [
-    { name: "Acrylic", description: "" },
-    { name: "White Tip", description: "" },
-    { name: "Pink & White", description: "" },
-    { name: "Gel Color Set", description: "" },
-    { name: "Dip Powder on nail", description: "" },
-    { name: "Ombre", description: "" },
+    { name: "Regular Pedicure", description: "A relaxing foot treatment with nail shaping, cuticle care, and polish." },  
+    { name: "Color Gel", description: "Chip-resistant gel polish for long-lasting pedicure perfection." },  
+    { name: "Acrylic Fullset Ext.", description: "Full acrylic nail extensions for added length and durability." },  
+    { name: "Acrylic Fullset", description: "Custom acrylic nails applied for strength and a polished look." },  
+    { name: "Acrylic Refill", description: "Maintenance service to refresh and extend your acrylic pedicure." },  
   ]
 
   const addOn = [
-    { name: "Polish Change Hands", description: "" },
-    { name: "Polish Change Feet", description: "" },
-    { name: "Gel Color Change", description: "" },
-    { name: "French", description: "" },
-    { name: "Extra Long Nail", description: "" },
+    { name: "Poly Gel Removal", description: "Safe and gentle removal of polygel extensions." },  
+    { name: "French for acrylic/gel", description: "Elegant white-tip French design on acrylic or gel nails." },  
+    { name: "Acrylic Removal", description: "Professional removal of acrylic nails without damage." },  
+    { name: "UV Gel Removal", description: "Careful removal of UV gel polish or extensions." },  
+    { name: "Apres Removal", description: "Gentle removal of Apres gel extensions." },  
+    { name: "Color Gel Removal", description: "Safe removal of gel polish to prep for a new color." },  
+    { name: "Length Change", description: "Adjusting nail length to your desired style." },  
+    { name: "Shape Change", description: "Reshaping nails to square, round, almond, or stiletto." },  
+    { name: "French", description: "Classic white-tip French manicure for a timeless look." },  
+    { name: "Nail Repair", description: "Fixing broken or damaged nails for a flawless finish." },  
+    { name: "Designs", description: "Custom nail art, glitter, or embellishments for a unique touch." },  
   ]
 
 
@@ -67,6 +66,8 @@ export default function HomePage() {
 
         {/* Featured Services */}
         <section className="mb-16">
+          <Card className="bg-white/80 backdrop-blur-sm shadow-xl border-rose-100">
+          <CardContent className="p-8">
           <div className="flex items-center justify-center gap-3 mb-8">
             <Star className="h-6 w-6 text-yellow-500 fill-yellow-500" />
             <h2 className="text-3xl font-bold text-gray-900">Featured Services</h2>
@@ -91,10 +92,14 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+          </CardContent>
+          </Card>
         </section>
 
         {/* Manicure Services */}
         <section className="mb-16">
+          <Card className="bg-white/80 backdrop-blur-sm shadow-xl border-rose-100">
+          <CardContent className="p-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Manicure Services</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,10 +114,14 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+          </CardContent>
+          </Card>
         </section>
 
         {/* Pedicure Services */}
         <section className="mb-16">
+          <Card className="bg-white/80 backdrop-blur-sm shadow-xl border-rose-100">
+          <CardContent className="p-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Pedicure Services</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -127,27 +136,14 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
-        </section>
-        {/* Artificial Nail Care */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Artificial Nail Care</h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {artificialNailCare.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow border-rose-100">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-gray-900">{service.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          </CardContent>
+          </Card>
         </section>
         
         {/* Add on */}
         <section>
+          <Card className="bg-white/80 backdrop-blur-sm shadow-xl border-rose-100">
+          <CardContent className="p-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Add on</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -162,6 +158,8 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+          </CardContent>
+          </Card>
         </section>
 
         {/* Call to Action */}
