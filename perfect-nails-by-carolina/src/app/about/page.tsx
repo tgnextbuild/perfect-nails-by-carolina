@@ -119,7 +119,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="img/placeholder.svg?height=400&width=400"
+                    src="/img/gallery/manicure6.jpg?height=400&width=400"
                     alt="Carolina - Professional Nail Technician"
                     width={400}
                     height={400}

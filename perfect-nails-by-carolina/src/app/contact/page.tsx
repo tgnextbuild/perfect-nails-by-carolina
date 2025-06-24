@@ -69,9 +69,10 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-gray-900">Hours</h3>
                     <p className="text-gray-600">{`We're here when you need us`}</p>
                     <div className="text-rose-600 font-medium space-y-1">
-                      <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
+                      <p>{config.COMPANY.HOURS}</p>
+                      {/* <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
                       <p>Saturday: 9:00 AM - 6:00 PM</p>
-                      <p>Sunday: 10:00 AM - 5:00 PM</p>
+                      <p>Sunday: 10:00 AM - 5:00 PM</p> */}
                     </div>
                   </div>
                 </div>

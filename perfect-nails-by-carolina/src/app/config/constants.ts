@@ -7,7 +7,7 @@ const dev = {
       FACEBOOK: 'https://www.facebook.com/',
       FRESHA: "https://www.fresha.com",
       ADDRESS: "60 Connecticut Ave, Norwalk, CT 06850",
-      HOURS: "Mon-Sat: 9:00AM - 9:00PM"
+      HOURS: "Mon-Sat: 10:00AM - 8:00PM"
     }
   };
   
@@ -20,7 +20,7 @@ const dev = {
       FACEBOOK: 'https://www.facebook.com/',
       FRESHA: "https://www.fresha.com",
       ADDRESS: "60 Connecticut Ave, Norwalk, CT 06850",
-      HOURS: "Mon-Sat: 9:00AM - 9:00PM"
+      HOURS: "Mon-Sat: 10:00AM - 8:00PM"
     }
   };
   
