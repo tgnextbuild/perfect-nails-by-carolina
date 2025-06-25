@@ -15,7 +15,7 @@ export default function GalleryPage() {
     { id: 7, source: '/img/gallery/manicure5.jpg', alt: "Beatiful manicure with floral design" },
     { id: 8, source: '/img/gallery/manicure6.jpg', alt: "Beatiful manicure with floral design" },
     { id: 9, source: '/img/gallery/manicure7.jpg', alt: "Beatiful manicure with floral design" },
-    { id: 10, source: '/img/gallery/manicure8.jpg', alt: "Beatiful manicure " },
+    { id: 10, source: '/img/gallery/manicure8.jpg', alt: "Beatiful manicure" },
 
     // { id: 7, alt: "Nude manicure with gold details" },
     // { id: 8, alt: "Seasonal nail art design" },
